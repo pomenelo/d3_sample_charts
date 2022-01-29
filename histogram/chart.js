@@ -78,7 +78,7 @@ async function drawBars() {
           ]))
             .attr("height", d => dimensions.boundedHeight - yScale(yAccessor(d))
         )
-        .attr("fill", "cornflowerblue")
+        .attr("fill", "dark-grey")
   
     //Draw labwls
 
