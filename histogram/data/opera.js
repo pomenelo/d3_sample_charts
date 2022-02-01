@@ -2,7 +2,7 @@ async function drawBars() {
 
 // 1. Access data
 const dataset = await d3.csv("/data/opera.csv")
-console.log(dataset[0])
+console.log(data[0])
 
 
 const drawHistogram = metric => {
