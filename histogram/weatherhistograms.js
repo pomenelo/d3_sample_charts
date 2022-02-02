@@ -10,7 +10,7 @@ async function drawBars() {
   
     // 2. Create chart dimensions
   
-    const width = 600
+const width = 600
     let dimensions = {
       width: width,
       height: width * 0.6,
@@ -82,7 +82,7 @@ async function drawBars() {
   
     //Draw labwls
 
-    const barText = binGroups.filter(yAccessor)
+  const barText = binGroups.filter(yAccessor)
         .append("text")
         .attr("x", d => xScale(d.x0) + (
           xScale(d.x1) - xScale(d.x0)
@@ -96,8 +96,8 @@ async function drawBars() {
         
 
     //draw mean line
-    const mean = d3.mean(dataset, xAccessor)
-    const meanLine = bounds.append("line")
+  const mean = d3.mean(dataset, xAccessor)
+  const meanLine = bounds.append("line")
         .attr("x1", xScale(mean))
         .attr("x2", xScale(mean))
         .attr("y1", -15)
@@ -105,7 +105,7 @@ async function drawBars() {
         .attr("stroke", "maroon")
         .attr("stroke-dasharray", "2px 4px")
 
-    const meanLabel = bounds.append("text")
+  const meanLabel = bounds.append("text")
         .attr("x", xScale(mean))
         .attr("y", -20)
         .text("mean")
@@ -129,7 +129,7 @@ async function drawBars() {
             .style("text-transform", "capitalize")
         }
 //extra 
-    const metrics = [
+  const metrics = [
               "windSpeed",
               "moonPhase",
               "dewPoint",
@@ -141,6 +141,18 @@ async function drawBars() {
               "visibility",
               "cloudCover",
             ]
-            metrics.forEach(drawHistogram)
+  let selectedMetricIndex = 0
+          
+drawHistogram(metrics[selectedMetricIndex])
+          
+  const button = d3.select("body")
+      .append("button")
+      .text("Change metric")
+          
+  button.node().addEventListener("click", onClick)
+      function onClick() {
+      selectedMetricIndex = (selectedMetricIndex + 1) % metrics.length
+      drawHistogram(metrics[selectedMetricIndex])
+      }
 }
 drawBars()
