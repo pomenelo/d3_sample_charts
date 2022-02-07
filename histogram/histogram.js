@@ -90,7 +90,6 @@ const barRects = binGroups.select("rect")
       xScale(d.x1) - xScale(d.x0) - barPadding
     ]))
     .attr("height", d => dimensions.boundedHeight - yScale(yAccessor(d)))
-    .attr("fill", d3.color("cornflowerblue"))
 
 const barText = binGroups.select("text")
     .attr("x", d => xScale(d.x0) + (xScale(d.x1) - xScale(d.x0)) / 2)
