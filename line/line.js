@@ -42,13 +42,14 @@ const yScale = d3.scaleLinear()
     .domain(d3.extent(dataset,  yAccessor))
     .range([dimensions.boundedHeight, 0])
 
-const freezingTemperaturePlacement = yScale(32)
+const freezingTemperaturePlacement = yScale(0)
 const freezingTemperature = bounds.append("rect")
     .attr("x", 0)
-    .aatr("width", dimensions.boundedWidth)
+    .attr("width", dimensions.boundedWidth)
     .attr("y", freezingTemperaturePlacement)
     .attr("height", dimensions.boundedHeight
         - freezingTemperaturePlacement)
+    .attr("fill", "#e0f3f3")
 
 }
   drawLineChart()
