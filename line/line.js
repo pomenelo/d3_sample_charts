@@ -2,6 +2,7 @@ async function drawLineChart() {
 
     // 1. Access data
     const dataset = await d3.json("./data/my_weather_data.json")
+    console.log(dataset[0])
   
     const yAccessor = d => d.temperatureMax
     const dateParser = d3.timeParse("%Y-%m-%d")
@@ -52,10 +53,10 @@ const freezingTemperature = bounds.append("rect")
     .attr("fill", "#e0f3f3")
 
 const xScale = d3.scaleTime()
-    .domain(d3.extent(dataset, xAccessor(d))
-    .range([0,dimensions.boundedWidth])
+    .domain(d3.extent(dataset, xAccessor))
+    .range([0, dimensions.boundedWidth])
 
-//draw data 
+// draw data 
 const lineGenerator = d3.line()
 .x(d => xScale(xAccessor(d)))
 .y(d => yScale(yAccessor(d)))
