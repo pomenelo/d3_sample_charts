@@ -42,7 +42,7 @@ const yScale = d3.scaleLinear()
     .domain(d3.extent(dataset,  yAccessor))
     .range([dimensions.boundedHeight, 0])
 
-const freezingTemperaturePlacement = yScale(0)
+const freezingTemperaturePlacement = yScale(32)
 const freezingTemperature = bounds.append("rect")
     .attr("x", 0)
     .attr("width", dimensions.boundedWidth)
@@ -50,6 +50,21 @@ const freezingTemperature = bounds.append("rect")
     .attr("height", dimensions.boundedHeight
         - freezingTemperaturePlacement)
     .attr("fill", "#e0f3f3")
+
+const xScale = d3.scaleTime()
+    .domain(d3.extent(dataset, xAccessor(d))
+    .range([0,dimensions.boundedWidth])
+
+//draw data 
+const lineGenerator = d3.line()
+.x(d => xScale(xAccessor(d)))
+.y(d => yScale(yAccessor(d)))
+
+const line = bounds.append("path")
+  .attr("d", lineGenerator(dataset))
+  .attr("fill", "none")
+  .attr("stroke", "#af9358")
+  .attr("stroke-width", 2)
 
 }
   drawLineChart()
