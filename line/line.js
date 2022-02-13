@@ -67,5 +67,21 @@ const line = bounds.append("path")
   .attr("stroke", "#af9358")
   .attr("stroke-width", 2)
 
+//draw peripherals
+const yAxisGenerator = d3.axisLeft()
+    .scale(yScale)
+
+const yAxis = bounds.append("g")
+    .call(yAxisGenerator)
+
+const xAxisGenerator = d3.axisBottom()
+    .scale(xScale)
+
+const xAxis = bounds.append("g")
+    .call(xAxisGenerator)
+      .style("transform", `translateY(${
+        dimensions.boundedHeight
+      }px)`)
+
 }
   drawLineChart()
