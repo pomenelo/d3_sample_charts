@@ -1,7 +1,7 @@
 async function drawLineChart() {
 
     // 1. Access data
-    const dataset = await d3.csv("./data/eth_historical.csv")
+    const dataset = await d3.csv("./data/eth22.csv")
     console.log(dataset[0])
   
     const yAccessor = d => d.Price
@@ -17,7 +17,7 @@ async function drawLineChart() {
             right: 15,
             bottom: 40,
             left: 60,
-        }
+        },
     }
     dimensions.boundedWidth = dimensions.width 
     - dimensions.margins.left 
@@ -25,6 +25,8 @@ async function drawLineChart() {
     dimensions.boundedHeight = dimensions.height
     - dimensions.margins.top
     - dimensions.margins.bottom
+
+    // 3. draw canvas
 
 const wrapper = d3.select("#wrapper")
     .append("svg")
