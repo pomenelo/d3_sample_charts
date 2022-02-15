@@ -17,11 +17,10 @@ async function drawLineChart() {
             right: 15,
             bottom: 40,
             left: 60,
-        }
+        },
     }
-    dimensions.boundedWidth = dimensions.width 
-    - dimensions.margins.left 
-    - dimensions.margins.right 
+    
+    dimensions.boundedWidth = dimensions.width - dimensions.margins.left - dimensions.margins.right 
     dimensions.boundedHeight = dimensions.height
     - dimensions.margins.top
     - dimensions.margins.bottom
@@ -38,7 +37,7 @@ const bounds = wrapper.append("g")
         dimensions.margins.top
     }px)`)
 
-//create scales
+// 3. create scales
 const yScale = d3.scaleLinear()
     .domain(d3.extent(dataset,  yAccessor))
     .range([dimensions.boundedHeight, 0])
@@ -56,7 +55,7 @@ const xScale = d3.scaleTime()
     .domain(d3.extent(dataset, xAccessor))
     .range([0, dimensions.boundedWidth])
 
-// draw data 
+// 4. draw data 
 const lineGenerator = d3.line()
 .x(d => xScale(xAccessor(d)))
 .y(d => yScale(yAccessor(d)))
@@ -67,7 +66,7 @@ const line = bounds.append("path")
   .attr("stroke", "#af9358")
   .attr("stroke-width", 2)
 
-//draw peripherals
+//  5. draw peripherals
 const yAxisGenerator = d3.axisLeft()
     .scale(yScale)
 

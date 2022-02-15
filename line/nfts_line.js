@@ -58,5 +58,24 @@ const line = bounds.append("path")
   .attr("fill", "none")
   .attr("stroke", "#af9358")
   .attr("stroke-width", 2)
+  const yAxisGenerator = d3.axisLeft()
+    .scale(yScale)
+
+// draw peripherals
+const xAxisGenerator = d3.axisBottom()
+    .scale(xScale)
+
+const xAxis = bounds.append("g")
+    .call(xAxisGenerator)
+        .stlye("transform", `translateY(${
+            dimensions.boundedHeight
+        }px)`)
+
+const xAxisLabel = xAxis.append("text")
+        .attr("x", dimensions.boundedWidth/2)
+        .attr("y", dimensions.margin.bottom - 10)
+        .attr("fill", "black")
+        .html("Date")
 
 }
+drawlinechart()
