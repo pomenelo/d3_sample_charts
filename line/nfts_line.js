@@ -1,11 +1,11 @@
 
 async function drawLineChart() {
   // 1. Access data
-  const dataset = await d3.csv("./data/eth22.csv");
+  const dataset = await d3.csv("./data/eth22.csv")
 
-  const yAccessor = (d) => d.Price;
-  const dateParser = d3.timeParse("%Y-%m-%d");
-  const xAccessor = (d) => dateParser(d.Date);
+  const yAccessor = (d) => d.Price
+  const dateParser = d3.timeParse("%Y-%m-%d")
+  const xAccessor = (d) => dateParser(d.Date)
 
 
   // 2. Create chart dimensions
@@ -16,27 +16,31 @@ async function drawLineChart() {
       top: 15,
       right: 25,
       bottom: 40,
-      left: 60
-    }
-  };
+      left: 60,
+    },
+  }
   dimensions.boundedWidth =
-    dimensions.width - dimensions.margins.left - dimensions.margins.right;
+    dimensions.width 
+    - dimensions.margins.left 
+    - dimensions.margins.right
 
   dimensions.boundedHeight =
-    dimensions.height - dimensions.margins.top - dimensions.margins.bottom;
+    dimensions.height - dimensions.margins.top - dimensions.margins.bottom
 
   // 3. draw canvas
 
   const wrapper = d3.select("#wrapper")
     .append("svg")
     .attr("width", dimensions.width)
-    .attr("height", dimensions.height);
+    .attr("height", dimensions.height)
 
   const bounds = wrapper.append("g")
     .style(
       "transform",
-      `translate(${dimensions.margins.left}px, ${dimensions.margins.top}px)`
-    )
+      `translate(${dimensions.margins.left
+    }px, ${
+    dimensions.margins.top
+    }px)`)
 
   //create scales
   const yScale = d3
@@ -130,12 +134,12 @@ const formatDate = d3.timeFormat("%B %A %-d, %Y")
   tooltip.select("#date")
     .text(formatDate(closestXValue))
 
-    const formatPrice = d => `${d3.format(".1f")(d)}°F`
+    const formatPrice = d => `${d3.format(".1f")(d)}USD`
     tooltip.select("#price")
         .html(formatPrice(closestYValue))
 
-  const x = xScale(closestXValue) + dimensions.margin.left
-  const y = yScale(closestYValue) + dimensions.margin.top
+  const x = xScale(closestXValue) + dimensions.margins.left
+  const y = yScale(closestYValue) + dimensions.margins.top
 
   tooltip.style("transform", `translate(`
      + `calc( -50% + ${x}px),`
@@ -152,7 +156,7 @@ const formatDate = d3.timeFormat("%B %A %-d, %Y")
 
 function onMouseLeave() {
   tooltip.style("opacity", 0)
-  tooltipCircle.style("opacity", 0)
+  tooltipCircle.style("opacity",0)
 }
 
 }

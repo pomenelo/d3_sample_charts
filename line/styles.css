@@ -2,10 +2,6 @@
     position: relative;
 }
 
-.freezing {
-    fill: #e0f3f3;
-}
-
 .line {
     fill: none;
     stroke: #af9358;
@@ -13,7 +9,7 @@
 }
 
 .y-axis-label {
-    fill: black;
+    fill: rgb(224, 216, 216);
     font-size: 1.4em;
     text-anchor: middle;
     transform: rotate(-90deg);
