@@ -3,9 +3,9 @@ async function drawLineChart() {
   // 1. Access data
   const dataset = await d3.csv("./data/eth22.csv")
 
-  const yAccessor = (d) => d.Price
+  const yAccessor = d => d.Price
   const dateParser = d3.timeParse("%Y-%m-%d")
-  const xAccessor = (d) => dateParser(d.Date)
+  const xAccessor = d => dateParser(d.Date)
 
 
   // 2. Create chart dimensions
@@ -35,9 +35,7 @@ async function drawLineChart() {
     .attr("height", dimensions.height)
 
   const bounds = wrapper.append("g")
-    .style(
-      "transform",
-      `translate(${dimensions.margins.left
+    .style("transform", `translate(${dimensions.margins.left
     }px, ${
     dimensions.margins.top
     }px)`)

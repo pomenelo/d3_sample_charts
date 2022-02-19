@@ -5,7 +5,17 @@
         <title>Line Chart</title>
     </head>
     <body>
-        <div id="wrapper"></div>
+        <div id="wrapper" class="wrapper">
+
+        <div id="tooltip" class="tooltip">
+            <div class="tooltip-date">
+                <span id="date"></span>
+            </div>
+            <div class="tooltip-price">
+                Price: <span id="price"></span>
+            </div>
+        </div>
+        </div>
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <script src="./nfts_line.js"></script>
     </body>
