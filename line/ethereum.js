@@ -5,7 +5,7 @@ async function drawLineChart() {
 
   const yAccessor = d => d.Price
   const dateParser = d3.timeParse("%Y-%m-%d")
-  const xAccessor = d => dateParser(d.Date)
+  const xAccessor = (d) => dateParser(d.Date)
 
 
   // 2. Create chart dimensions
@@ -66,6 +66,9 @@ async function drawLineChart() {
     .attr("fill", "none")
     .attr("stroke", "#af9358")
     .attr("stroke-width", 2);
+
+  const areaGenerator = d3.area()
+  
 
   //draw peripherals
   const yAxisGenerator = d3.axisLeft().scale(yScale).tickArguments([10]);
