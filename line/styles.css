@@ -3,8 +3,8 @@
 }
 
 .line {
-    fill: none;
-    stroke: #af9358;
+    fill: #bdb095 ;
+    stroke: #bdb095;
     stroke-width: 2;
 }
 
@@ -15,7 +15,7 @@
     transform: rotate(-90deg);
 }
 
-.listening-rect {
+.listener-rect {
     fill: transparent;
 }
 
@@ -64,6 +64,11 @@ body {
     transform: translate(-50%, 50%) rotate(45deg);
     transform-origin: center center;
     z-index: 10;
+}
+
+.area {
+    fill: lightsteelblue;
+    stroke-width: 0;
 }
 
 .tooltip-date {
