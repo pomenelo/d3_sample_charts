@@ -49,16 +49,16 @@ g.append("g")
 // x axis label
 const xAxisLabel = g.append("text")
 .attr("x", WIDTH/ 2)
-.attr("y", HEIGHT + 60)
-.style("font-size", "20px")
+.attr("y", HEIGHT + 40)
+.style("font-size", "10px")
 .attr("text-anchor", "middle")
 .text("GDP Per Capita ($)")
 // y axis label
 const yAxisLabel = g.append("text")
    .attr("transform", "rotate(-90)")
    .attr("y", -40)
-   .attr("x", -170 )
-   .style("font-size", "20px")
+   .attr("x", -140 )
+   .style("font-size", "10px")
    .attr("text-anchor", "middle")
    .text("Life Expectancy (Years)")
 const timeLabel = g.append("text")
@@ -69,6 +69,26 @@ const timeLabel = g.append("text")
    .attr("text-anchor", "middle")
    .text("1800")
 
+const continents = ["europe", "asia", "americas", "africs"]
+  
+const legend = g.append("g")
+  .attr("transform", `translate(${WIDTH - 10}, ${HEIGHT - 125})`)
+
+continents.forEach((continent, i) => {
+  const legendRow = legend.append("g")
+  .attr("transform", `translate(0, ${i*20})`)
+
+  legendRow.append("rect")
+    .attr("width", 10)
+    .attr("height", 10)
+    .attr("fill", continentColor(continent))
+  legendRow.append("text")
+    .attr("x", -10)
+    .attr("y", 10)
+    .attr("text-anchor", "end")
+    .style("text-transform", "capitalize")
+    .text(continent)
+})
 
 
    d3.json("data/data.json").then(function(data){
