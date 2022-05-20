@@ -18,6 +18,12 @@ const g = svg.append("g")
 
 let time = 0
 
+// tooltip 
+const tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .html(d => d)
+g.call(tip)
+
 //create sccales
 
 const x = d3.scaleLog()
@@ -130,6 +136,8 @@ function update(data) {
 	// ENTER new elements present in new data.
 	circles.enter().append("circle")
 		.attr("fill", d => continentColor(d.continent))
+    .on("mouseover", tip.show)
+    .on("mouseout", tip.hide)
 		.merge(circles)
 		.transition(t)
 			.attr("cy", d => y(d.life_exp))
