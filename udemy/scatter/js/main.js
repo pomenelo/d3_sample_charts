@@ -90,6 +90,7 @@ function update(data) {
     .tickFormat(d => d + "m")
     yAxisGroup.transition(t).call(yAxisCall)
 
+  
   // JOIN new data with old elements
   const rects = g.selectAll("circle")
     .data(data, d => d.month)
