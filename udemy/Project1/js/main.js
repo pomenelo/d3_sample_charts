@@ -84,7 +84,7 @@ const timeLabel = g.append("text")
    .attr("text-anchor", "middle")
    .text("1800")
 
-const continents = ["Europe", "Asia", "Americas", "Africa"]
+const continents = ["europe", "asia", "americas", "africa"]
   
 const legend = g.append("g")
   .attr("transform", `translate(${WIDTH - 10}, ${HEIGHT - 125})`)
