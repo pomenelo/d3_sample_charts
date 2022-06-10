@@ -1,0 +1,100 @@
+rank,company,country,sales_usd_billion,sales_unit,profit_usd_billion,profit_unit,assets_usd_billion,market_usd_billion,sales_usd,profit_usd,assets_usd
+1,Berkshire Hathaway,United States,276.09,B,89.8,B,958.78,741.48,276.09,89.8,958.78
+2,ICBC,China,208.13,B,54.03,B,5518.51,214.43,208.13,54.03,5518.51
+3,Saudi Arabian Oil Company (Saudi Aramco),Saudi Arabia,400.38,B,105.36,B,576.04,2292.08,400.38,105.36,576.04
+4,JPMorgan Chase,United States,124.54,B,42.12,B,3954.69,374.45,124.54,42.12,3954.69
+5,China Construction Bank,China,202.07,B,46.89,B,4746.95,181.32,202.07,46.89,4746.95
+6,Amazon,United States,469.82,B,33.36,B,420.55,1468.4,469.82,33.36,420.55
+7,Apple,United States,378.7,B,100.56,B,381.19,2640.32,378.7,100.56,381.19
+8,Agricultural Bank of China,China,181.42,B,37.38,B,4561.05,133.38,181.42,37.38,4561.05
+9,Bank of America,United States,96.83,B,31,B,3238.22,303.1,96.83,31,3238.22
+10,Toyota Motor,Japan,281.75,B,28.15,B,552.46,237.73,281.75,28.15,552.46
+11,Alphabet,United States,257.49,B,76.03,B,359.27,1581.72,257.49,76.03,359.27
+12,Microsoft,United States,184.9,B,71.19,B,340.39,2054.37,184.9,71.19,340.39
+13,Bank of China,China,152.43,B,33.57,B,4192.84,117.83,152.43,33.57,4192.84
+14,Samsung Group,South Korea,244.16,B,34.27,B,358.88,367.26,244.16,34.27,358.88
+15,ExxonMobil,United States,280.51,B,23.04,B,338.92,359.73,280.51,23.04,338.92
+16,Shell,United Kingdom,261.76,B,20.27,B,404.38,211.1,261.76,20.27,404.38
+17,Ping An Insurance Group,China,181.37,B,15.74,B,1587.11,121.69,181.37,15.74,1587.11
+18,Wells Fargo,United States,84.12,B,20.58,B,1939.71,176.77,84.12,20.58,1939.71
+19,Verizon Communications,United States,134.35,B,21.52,B,366.6,218.02,134.35,21.52,366.6
+20,AT&T,United States,163.03,B,17.33,B,551.62,141.79,163.03,17.33,551.62
+21,PetroChina,China,380.31,B,14.29,B,392.6,142.3,380.31,14.29,392.6
+21,UnitedHealth Group,United States,297.55,B,17.45,B,221.24,490.15,297.55,17.45,221.24
+23,Walmart,United States,572.75,B,13.67,B,244.86,431.64,572.75,13.67,244.86
+24,China Merchants Bank,China,71.07,B,18.58,B,1451.2,167.32,71.07,18.58,1451.2
+25,Volkswagen Group,Germany,295.73,B,17.54,B,638.26,82.4,295.73,17.54,638.26
+26,Chevron,United States,156.29,B,15.63,B,239.53,316.23,156.29,15.63,239.53
+27,Citigroup,United States,79.94,B,18.23,B,2394.11,101.48,79.94,18.23,2394.11
+28,Tencent Holdings,China,86.86,B,34.94,B,252.99,414.28,86.86,34.94,252.99
+29,Total,France,185.12,B,16.14,B,293.46,127.32,185.12,16.14,293.46
+30,Postal Savings Bank Of China (PSBC),China,77.61,B,11.33,B,1975.08,125.53,77.61,11.33,1975.08
+31,China Mobile,Hong Kong,131.49,B,17.97,B,283.37,147.05,131.49,17.97,283.37
+32,Comcast,United States,116.39,B,14.16,B,275.9,205.72,116.39,14.16,275.9
+33,Alibaba Group,China,129.76,B,10.17,B,276.25,237.78,129.76,10.17,276.25
+34,Meta Platforms,United States,117.93,B,39.37,B,165.99,499.86,117.93,39.37,165.99
+35,Allianz,Germany,138.62,B,7.81,B,1324.62,96.42,138.62,7.81,1324.62
+36,Morgan Stanley,United States,60.22,B,14.58,B,1222.23,150.95,60.22,14.58,1222.23
+37,Goldman Sachs Group,United States,62.81,B,18.74,B,1589,109.32,62.81,18.74,1589
+38,HSBC Holdings,United Kingdom,59.33,B,12.58,B,2957.94,135.3,59.33,12.58,2957.94
+39,Johnson & Johnson,United States,94.88,B,19.83,B,182.02,477.38,94.88,19.83,182.02
+40,BNP Paribas,France,127.42,B,9.85,B,2995.89,68.76,127.42,9.85,2995.89
+41,Mercedes-Benz Group,Germany,178.94,B,27.19,B,295.48,74.62,178.94,27.19,295.48
+42,CVS Health,United States,291.98,B,7.91,B,240.5,133.53,291.98,7.91,240.5
+43,Pfizer,United States,81.49,B,21.98,B,181.48,271.83,81.49,21.98,181.48
+44,Softbank,Japan,96.86,B,20.87,B,418.94,71.69,96.86,20.87,418.94
+45,Sinopec,China,384.82,B,11.04,B,292.05,80.81,384.82,11.04,292.05
+46,Nestlé,Switzerland,95.25,B,18.49,B,152.71,360.01,95.25,18.49,152.71
+47,RBC,Canada,45.24,B,13,B,1377.94,147.92,45.24,13,1377.94
+48,AXA Group,France,145.19,B,8.39,B,839.85,65.75,145.19,8.39,839.85
+49,Gazprom,Russia,117.3,B,25.44,B,360.47,63.56,117.3,25.44,360.47
+50,BP,United Kingdom,158.01,B,7.55,B,287.27,98.38,158.01,7.55,287.27
+51,Intel,United States,79.02,B,19.87,B,168.41,190.29,79.02,19.87,168.41
+52,Nippon Telegraph & Tel,Japan,110.39,B,10.15,B,204.46,103.98,110.39,10.15,204.46
+53,Reliance Industries,India,86.85,B,7.81,B,192.59,228.63,86.85,7.81,192.59
+53,TD Bank Group,Canada,38.51,B,11.78,B,1398.48,132.99,38.51,11.78,1398.48
+55,Industrial Bank,China,60.53,B,12.82,B,1350.32,68.59,60.53,12.82,1350.32
+56,Sony,Japan,89.9,B,7.99,B,260.48,108.84,89.9,7.99,260.48
+57,Taiwan Semiconductor,Taiwan,61.47,B,23.63,B,139.35,494.6,61.47,23.63,139.35
+58,Santander,Spain,78.22,B,9.6,B,1814.78,58.21,78.22,9.6,1814.78
+59,Mitsubishi UFJ Financial,Japan,48.28,B,11.29,B,3176.37,75.75,48.28,11.29,3176.37
+59,Ford Motor,United States,136.34,B,17.94,B,257.04,60.8,136.34,17.94,257.04
+59,LVMH Moët Hennessy Louis Vuitton,France,75.9,B,14.23,B,142.5,346.8,75.9,14.23,142.5
+62,Bank of Communications,China,76,B,12.98,B,1830.4,52.82,76,12.98,1830.4
+63,Procter & Gamble,United States,79.62,B,14.6,B,120.22,386.53,79.62,14.6,120.22
+64,BMW Group,Germany,131.48,B,14.64,B,277.28,55.98,131.48,14.64,277.28
+65,Petrobras,Brazil,83.89,B,19.77,B,174.68,83.98,83.89,19.77,174.68
+66,Deutsche Telekom,Germany,128.59,B,4.93,B,340.56,91.72,128.59,4.93,340.56
+67,AbbVie,United States,56.2,B,11.46,B,146.53,273.76,56.2,11.46,146.53
+68,Novartis,Switzerland,51.63,B,24.14,B,135.88,200.73,51.63,24.14,135.88
+69,General Motors,United States,127,B,10.02,B,244.72,57.89,127,10.02,244.72
+70,Equinor,Norway,88.37,B,8.57,B,147.12,117.87,88.37,8.57,147.12
+71,China Life Insurance,China,130.5,B,7.87,B,769.88,43.02,130.5,7.87,769.88
+72,Roche Holding,Switzerland,68.69,B,15.24,B,101.32,308.14,68.69,15.24,101.32
+73,AIA Group,Hong Kong,45.16,B,7.43,B,334.88,120.19,45.16,7.43,334.88
+74,MetLife,United States,71.08,B,6.55,B,759.71,57.39,71.08,6.55,759.71
+75,BHP Group,Australia,65.55,B,16.92,B,105.72,178.07,65.55,16.92,105.72
+76,The Home Depot,United States,151.16,B,16.43,B,71.88,310.13,151.16,16.43,71.88
+77,Siemens,Germany,76.46,B,6.55,B,164.22,102.23,76.46,6.55,164.22
+77,American Express,United States,46.29,B,7.86,B,196,136.72,46.29,7.86,196
+79,Stellantis,Netherlands,176.61,B,16.78,B,195.33,44.26,176.61,16.78,195.33
+80,Zurich Insurance Group,Switzerland,69.58,B,5.21,B,410.15,69.22,69.58,5.21,410.15
+81,Rosneft,Russia,111.4,B,11.98,B,219.41,48.79,111.4,11.98,219.41
+82,Rio Tinto,United Kingdom,63.46,B,21.06,B,102.9,117.78,63.46,21.06,102.9
+83,Brookfield Asset Management,Canada,78.82,B,3.97,B,391,80.94,78.82,3.97,391
+84,Cigna,United States,174.27,B,5.37,B,151.02,81.2,174.27,5.37,151.02
+85,Prudential Financial,United States,70.93,B,7.61,B,937.58,43.6,70.93,7.61,937.58
+86,PepsiCo,United States,79.47,B,7.62,B,92.38,238.13,79.47,7.62,92.38
+87,Merck & Co.,United States,50.37,B,13.05,B,105.69,213.83,50.37,13.05,105.69
+88,Anthem,United States,144.35,B,6.24,B,100.49,121.25,144.35,6.24,100.49
+89,Bank of Nova Scotia,Canada,30.35,B,7.96,B,979.3,80.58,30.35,7.96,979.3
+90,American International Group,United States,52.06,B,9.39,B,521.83,48.73,52.06,9.39,521.83
+91,Glencore International,Switzerland,203.41,B,5,B,127.51,79.9,203.41,5,127.51
+92,Cisco Systems,United States,51.55,B,11.82,B,94.26,213.36,51.55,11.82,94.26
+93,Anheuser-Busch InBev,Belgium,54.33,B,4.66,B,219.37,118.52,54.33,4.66,219.37
+94,Walt Disney,United States,72.98,B,3.08,B,203.31,215.33,72.98,3.08,203.31
+95,Chubb,Switzerland,40.95,B,8.54,B,181.75,87.31,40.95,8.54,181.75
+96,CITIC,Hong Kong,91.21,B,9.03,B,1370.59,31.96,91.21,9.03,1370.59
+96,Lloyds Banking Group,United Kingdom,58.48,B,7.36,B,1200.75,41.34,58.48,7.36,1200.75
+98,IBM,United States,67.25,B,5.52,B,133.28,124.33,67.25,5.52,133.28
+99,Sanofi,France,44.63,B,7.36,B,136.74,136.86,44.63,7.36,136.74
