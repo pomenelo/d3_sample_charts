@@ -16,7 +16,7 @@ const g = svg.append("g")
   .attr("transform", `translate(${MARGIN.LEFT}, ${MARGIN.TOP})`)
 
 // time parser for x-scale
-const parseTime = d3.timeParse("%Y")
+const parseTime = d3.timeParse("%d/%m%Y")
 // for tooltip
 const bisectDate = d3.bisector(d => d.year).left
 
@@ -48,16 +48,28 @@ yAxis.append("text")
 	.text("Population)")
 
 // line path generator
-const line = d3.line()
+const bitcoin = d3.line()
 	.x(d => x(d.year))
 	.y(d => y(d.value))
 
-d3.json("data/example.json").then(data => {
+d3.json("data/coins.json").then(data => {
 	// clean data
-	data.forEach(d => {
-		d.year = parseTime(d.year)
-		d.value = Number(d.value)
+	console.log(data)
+	filteredData = {}
+	Object.keys(data).forEach(coin => {
+		filteredData[coin] = data[coin]
+			.filter(d => {
+				return !r(d["price_usd"] == null)
+			}).map(d => {
+				d["price_usd"] = Number(d["price_usd"])
+				d["24h_vol"] = Number(d["24h_vol"])
+				d["market_cap"] = Number(d["market_cap"])
+				d["date"] = parseTime(d["date"])
+				return d
+			})
 	})
+	})
+
 
 	// set scale domains
 	x.domain(d3.extent(data, d => d.year))

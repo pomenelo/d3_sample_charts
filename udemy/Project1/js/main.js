@@ -177,6 +177,7 @@ function update(data) {
 
 	// EXIT old elements not present in new data.
 	circles.exit().remove()
+  
 
 	// ENTER new elements present in new data.
 	circles.enter().append("circle")
